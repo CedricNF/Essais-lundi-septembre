@@ -4,6 +4,6 @@ public class Random {
 	
 	//Class Random
 	
-	public String IciUneModifStp;
+	public String Syl20;
 
 }
