@@ -36,4 +36,9 @@ public class AchatService implements IAchatService {
 		
 	}
 
+	@Override
+	public List<Achat> findByIdFournisseur(Long idFournisseur) {
+		return achatservice.findByFournisseur(idFournisseur);
+	}
+
 }

@@ -35,5 +35,9 @@ public class AchatController {
 	public void deleteAchat(@PathVariable("id_achat") Long id_achat) {
 		achatservice.delete(id_achat);
 	}
+	@RequestMapping(value = "achatF/{idFournisseur}", method = RequestMethod.GET)
+	public List<Achat> findByIdFournisseur(@PathVariable("idFournisseur") Long idFournisseur) {
+		return achatservice.findByIdFournisseur(idFournisseur);
+	}
 
 }

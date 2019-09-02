@@ -13,4 +13,6 @@ public interface IAchatService {
 	public Achat save(Achat achat);
 
 	public void delete(Long id_achat);
+	
+	public List<Achat> findByIdFournisseur(Long idFournisseur);
 }
